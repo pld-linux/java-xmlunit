@@ -9,8 +9,6 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.zip
 # Source0-md5:	4f03206acc9ed18bc6cc23fd38b4fc82
 URL:		http://xmlunit.sourceforge.net/
 BuildRequires:	ant >= 1.5
-BuildRequires:	autoconf >= 2.57
-BuildRequires:	automake
 BuildRequires:	jaxp_parser_impl
 BuildRequires:	jaxp_transform_impl
 BuildRequires:	jpackage-utils
