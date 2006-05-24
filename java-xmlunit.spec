@@ -6,7 +6,7 @@ Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.zip
-# Source0-md5:	27bb68ef61dd9a967b375b7798c2524d
+# Source0-md5:	4f03206acc9ed18bc6cc23fd38b4fc82
 URL:		http://xmlunit.sourceforge.net/
 BuildRequires:	ant >= 1.5
 BuildRequires:	autoconf >= 2.57
