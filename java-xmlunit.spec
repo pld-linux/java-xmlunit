@@ -8,10 +8,12 @@ Group:		Libraries
 Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.zip
 # Source0-md5:	27bb68ef61dd9a967b375b7798c2524d
 URL:		http://xmlunit.sourceforge.net/
+BuildRequires:	ant >= 1.5
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	jaxp_parser_impl
 BuildRequires:	jaxp_transform_impl
+BuildRequires:	jpackage-utils
 BuildRequires:	junit
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	jaxp_parser_impl
