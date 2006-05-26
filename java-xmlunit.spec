@@ -1,11 +1,11 @@
-Summary:	XMLUnit extends JUnit and NUnit to enable unit testing of XML
-#Summary(pl):	
+Summary:	XMLUnit - extend JUnit and NUnit to enable unit testing of XML
+Summary(pl):	XMLUnit - rozszerzenie JUnita i NUnita o testowanie jednostkowe XML-a
 Name:		xmlunit
 Version:	1.0
 Release:	1
 License:	BSD
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.zip
+Source0:	http://dl.sourceforge.net/xmlunit/%{name}%{version}.zip
 # Source0-md5:	4f03206acc9ed18bc6cc23fd38b4fc82
 URL:		http://xmlunit.sourceforge.net/
 BuildRequires:	ant >= 1.5
@@ -22,12 +22,16 @@ ExclusiveArch:	i586 i686 pentium3 pentium4 athlon %{x8664} noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XMLUnit extends JUnit and NUnit to enable unit testing of XML.  It
+XMLUnit extends JUnit and NUnit to enable unit testing of XML. It
 compares a control XML document to a test document or the result of a
 transformation, validates documents, and compares the results of XPath
 expressions.
 
-#%description -l pl
+%description -l pl
+XMLUnit rozszerza JUnita i NUnita o mo¿liwo¶æ testowania jednostkowego
+XML-a. Porównuje kontrolny dokument XML z dokumentem testowym lub
+wynikiem przekszta³cenia, sprawdza poprawno¶æ dokumentów i porównuje
+wyniki wyra¿eñ XPath.
 
 %prep
 %setup -q -n %{name}
