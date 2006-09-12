@@ -42,7 +42,7 @@ export CLASSPATH="$CLASSPATH:`/usr/bin/build-classpath $required_jars`"
 export JAVAC=%{javac}
 export JAVA=%{java}
 
-%{ant}
+%ant
 
 %install
 rm -rf $RPM_BUILD_ROOT
