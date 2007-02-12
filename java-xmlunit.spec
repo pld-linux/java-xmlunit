@@ -1,5 +1,5 @@
 Summary:	XMLUnit - extend JUnit and NUnit to enable unit testing of XML
-Summary(pl.UTF-8):   XMLUnit - rozszerzenie JUnita i NUnita o testowanie jednostkowe XML-a
+Summary(pl.UTF-8):	XMLUnit - rozszerzenie JUnita i NUnita o testowanie jednostkowe XML-a
 Name:		xmlunit
 Version:	1.0
 Release:	1
