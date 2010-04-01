@@ -26,6 +26,7 @@ Source0:	http://downloads.sourceforge.net/project/xmlunit/xmlunit%20for%20Java/X
 URL:		http://xmlunit.sourceforge.net/
 BuildRequires:	ant >= 1.5
 BuildRequires:	ant-junit
+BuildRequires:	ant-trax
 %{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
 %{?with_java_sun:BuildRequires:	java-sun}
 BuildRequires:	jaxp_parser_impl
