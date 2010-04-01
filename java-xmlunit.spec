@@ -1,17 +1,12 @@
-# TODO
+# TODO:
 # - docs are broken. html docs seem to be incompatibile with our
 #   docbook-style-xsl. Does it require earlier version? pdf docs require
 #   dblatex command. I have no idea what it is and what should provide it.
 
-%bcond_with	doc		# build docs. Does not work.
+# NOTES:
+# - I'm forcing java_sun because it does not pass test_Transform on gcj.
 
-%if "%{pld_release}" == "ti"
-%bcond_without	java_sun	# build with gcj
-%else
-%bcond_with	java_sun	# build with java-sun
-%endif
-#
-%include	/usr/lib/rpm/macros.java
+%bcond_with	doc		# build docs. Does not work.
 
 %define		srcname	xmlunit
 Summary:	XMLUnit - extend JUnit and NUnit to enable unit testing of XML
@@ -27,17 +22,17 @@ URL:		http://xmlunit.sourceforge.net/
 BuildRequires:	ant >= 1.5
 BuildRequires:	ant-junit
 BuildRequires:	ant-trax
-%{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
-%{?with_java_sun:BuildRequires:	java-sun}
+BuildRequires:	java-sun
 BuildRequires:	jaxp_parser_impl
 BuildRequires:	jaxp_transform_impl
 BuildRequires:	jpackage-utils
-BuildRequires:	junit
+BuildRequires:	java-junit
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	jaxp_parser_impl
 Requires:	jaxp_transform_impl
-Requires:	junit
+Requires:	java-junit
+Conflicts:	java-gcj-compat
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
