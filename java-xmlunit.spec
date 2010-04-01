@@ -9,8 +9,8 @@
 %bcond_with	doc		# build docs. Does not work.
 
 %define		srcname	xmlunit
-Summary:	XMLUnit - extend JUnit and NUnit to enable unit testing of XML
-Summary(pl.UTF-8):	XMLUnit - rozszerzenie JUnita i NUnita o testowanie jednostkowe XML-a
+Summary:	XMLUnit - extend JUnit to enable unit testing of XML
+Summary(pl.UTF-8):	XMLUnit - rozszerzenie JUnit o testowanie jednostkowe XML-a
 Name:		java-xmlunit
 Version:	1.3
 Release:	1
