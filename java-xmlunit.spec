@@ -4,7 +4,7 @@
 #   dblatex command. I have no idea what it is and what should provide it.
 
 # NOTES:
-# - I'm forcing java_sun because it does not pass test_Transform on gcj.
+# - I'm conflicting java-gcj-compat because it does not pass test_Transform on gcj.
 
 %bcond_with	doc		# build docs. Does not work.
 
@@ -22,13 +22,14 @@ URL:		http://xmlunit.sourceforge.net/
 BuildRequires:	ant >= 1.5
 BuildRequires:	ant-junit
 BuildRequires:	ant-trax
-BuildRequires:	java-sun
 BuildRequires:	jaxp_parser_impl
 BuildRequires:	jaxp_transform_impl
+BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	java-junit
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpmbuild(macros) >= 1.300
+BuildConflicts: java-gcj-compat
 Requires:	jaxp_parser_impl
 Requires:	jaxp_transform_impl
 Requires:	java-junit
