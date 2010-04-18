@@ -22,18 +22,16 @@ URL:		http://xmlunit.sourceforge.net/
 BuildRequires:	ant >= 1.5
 BuildRequires:	ant-junit
 BuildRequires:	ant-trax
-BuildRequires:	jaxp_parser_impl
-BuildRequires:	jaxp_transform_impl
+BuildRequires:	java(jaxp_parser_impl)
+BuildRequires:	java(jaxp_transform_impl)
+BuildRequires:	java-junit
 BuildRequires:	jdk
 BuildRequires:	jpackage-utils
-BuildRequires:	java-junit
-BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpmbuild(macros) >= 1.300
-BuildConflicts: java-gcj-compat
-Requires:	jaxp_parser_impl
-Requires:	jaxp_transform_impl
+BuildConflicts:	java-gcj-compat
+Requires:	java(jaxp_parser_impl)
+Requires:	java(jaxp_transform_impl)
 Requires:	java-junit
-Conflicts:	java-gcj-compat
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
