@@ -96,7 +96,8 @@ ln -nfs %{srcname}-%{version} %{_javadocdir}/%{srcname}
 %files
 %defattr(644,root,root,755)
 %doc README* LICENSE.txt
-%{_javadir}/*.jar
+%{_javadir}/%{srcname}-%{version}.jar
+%{_javadir}/%{srcname}.jar
 
 %if %{with javadoc}
 %files javadoc
