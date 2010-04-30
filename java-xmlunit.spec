@@ -13,7 +13,7 @@ Summary:	XMLUnit - extend JUnit to enable unit testing of XML
 Summary(pl.UTF-8):	XMLUnit - rozszerzenie JUnit o testowanie jednostkowe XML-a
 Name:		java-xmlunit
 Version:	1.3
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/project/xmlunit/xmlunit%20for%20Java/XMLUnit%20for%20Java%201.3/xmlunit-%{version}-src.zip
