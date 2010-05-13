@@ -28,6 +28,7 @@ BuildRequires:	java-junit
 BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	unzip
 BuildConflicts:	java-gcj-compat
 Requires:	java(jaxp_parser_impl)
 Requires:	java(jaxp_transform_impl)
